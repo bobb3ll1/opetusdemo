@@ -17,12 +17,6 @@ OPISKELIJAT = [
 def etusivu():
     return render_template("etusivu.html", opiskelijat=OPISKELIJAT)
 
-
-@app.route("/esimerkki")
-def esimerkki():
-    return render_template("opiskelija.html", nimi="Esimerkki (opettaja)", tervehdys="Hei! Tämä on esimerkkisivu.")
-
-
 # ------------------------------------------------------------
 # Opiskelijat lisäävät oman reitin tähän, esim:
 #
@@ -30,10 +24,6 @@ def esimerkki():
 # def matti():
 #     return render_template("opiskelija.html", nimi="Matti M", tervehdys="Moikka!")
 # ------------------------------------------------------------
-
-@app.route("/samip")
-def samip():
-    return render_template("opiskelija.html", nimi="Sami P", tervehdys="Helou!")
 
 
 if __name__ == "__main__":
