@@ -9,6 +9,7 @@ app = Flask(__name__)
 # ------------------------------------------------------------
 OPISKELIJAT = [
     {"nimi": "Esimerkki (opettaja)", "reitti": "/esimerkki", "tervehdys": "Hei! Tämä on esimerkkisivu."},
+    {"nimi": "SamiP", "reitti": "/samiop", "tervehdys": "Helou."},
 ]
 
 
@@ -29,6 +30,9 @@ def esimerkki():
 # def matti():
 #     return render_template("opiskelija.html", nimi="Matti M", tervehdys="Moikka!")
 # ------------------------------------------------------------
+
+def samip():
+    return render_template("opiskelija.html", nimi="Sami P", tervehdys="Helou!")
 
 
 if __name__ == "__main__":
