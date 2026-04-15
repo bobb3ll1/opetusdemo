@@ -31,6 +31,7 @@ def esimerkki():
 #     return render_template("opiskelija.html", nimi="Matti M", tervehdys="Moikka!")
 # ------------------------------------------------------------
 
+@app.route("/samip")
 def samip():
     return render_template("opiskelija.html", nimi="Sami P", tervehdys="Helou!")
 
