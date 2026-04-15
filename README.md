@@ -31,5 +31,5 @@ Lisää tiedostoon seuraava sisältö ja muokkaa sitä omilla tiedoillasi:
 {
   "nimi": "Matti M",
   "reitti": "/matti",
-  "tervehdys": "Moikka maailma!"
+  "tervehdys": "Moikka maailma!!"
 }
