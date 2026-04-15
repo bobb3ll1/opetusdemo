@@ -9,13 +9,18 @@ app = Flask(__name__)
 # ------------------------------------------------------------
 OPISKELIJAT = [
     {"nimi": "Esimerkki (opettaja)", "reitti": "/esimerkki", "tervehdys": "Hei! Tämä on esimerkkisivu."},
-    {"nimi": "SamiP", "reitti": "/samip", "tervehdys": "Helou."},
 ]
 
 
 @app.route("/")
 def etusivu():
     return render_template("etusivu.html", opiskelijat=OPISKELIJAT)
+
+
+@app.route("/esimerkki")
+def esimerkki():
+    return render_template("opiskelija.html", nimi="Esimerkki (opettaja)", tervehdys="Hei! Tämä on esimerkkisivu.")
+
 
 # ------------------------------------------------------------
 # Opiskelijat lisäävät oman reitin tähän, esim:
